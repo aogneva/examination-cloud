@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+eureka:
+  server:
+    enable-self-presentation: false
+  client:
+    register-with-eureca: false
+    fetch-registry: false
+
+spring:
+  application:
+    name: discovery
