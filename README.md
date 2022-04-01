@@ -1,29 +1,29 @@
-# examination-cloud
+# Examination-cloud
 
 This project is simple Spring Cloud example based on webinar [Spring-cloud goes cloud](https://www.youtube.com/watch?v=4hYeX2WVt68)
 
 Project consists of four modules:
 
-### exam-discovery
+### Exam-discovery
 This is a registering module, based on Eureca. It helps to register microservices and then find each other in order to commenicate.  
 Configured at port: http://localhost:8761
 
-### exam-historic
+### Exam-historic
 This microservice provides the examination questions on history theme.
 It includes H2 database and hasn't got questions on start.  
 Configured at port: http://localhost:8081
 
-### exam-math
+### Exam-math
 This microservice provides the examination questions of math subject.
 Questions are placed just inside the code.  
 Configured at port: http://localhost:8082
 
-### examinator
+### Examinator
 This microservice provides common endpoint to get exam questions.  
 It refers to exam-math and exam-historic to get questions.  
 Configured at port: http://localhost:8083
 
-##Quick start
+## Quick start
 1. Start services and make sure that all the services registered in [exam-discovery](http://localhost:8761).   
 1. Add historic questions through exam-historic, for example:  
 `curl -X POST http://localhost:8081/questions \   
